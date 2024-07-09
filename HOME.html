@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Scientific Calculator</h1>
+    <form>
+      <input type="text" id="display" readonly>
+      <table>
+        <tr>
+          <td colspan="2"><button type="button" class="btn-cb" id="btn-clear">C</button></td> 
+          <td colspan="2"><button type="button" class="btn-cb" id="btn-backspace"><-</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn-num" id="btn-7">7</button></td>
+          <td><button type="button" class="btn-num" id="btn-8">8</button></td>
+          <td><button type="button" class="btn-num" id="btn-9">9</button></td>
+          <td><button type="button" class="btn-op" id="btn-divide">/</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn-num" id="btn-4">4</button></td>
+          <td><button type="button" class="btn-num" id="btn-5">5</button></td>
+          <td><button type="button" class="btn-num" id="btn-6">6</button></td>
+          <td><button type="button" class="btn-op" id="btn-multiply">*</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn-num" id="btn-1">1</button></td>
+          <td><button type="button" class="btn-num" id="btn-2">2</button></td>
+          <td><button type="button" class="btn-num" id="btn-3">3</button></td>
+          <td><button type="button" class="btn-op" id="btn-minus">-</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn-num" id="btn-0">0</button></td>
+          <td><button type="button" class="btn-num" id="btn-decimal">.</button></td>
+          <td><button type="button" class="btn-eq" id="btn-equals">=</button></td>
+          <td><button type="button" class="btn-op" id="btn-plus">+</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn-op" id="btn-sin">sin</button></td> 
+          <td><button type="button" class="btn-op" id="btn-cos">cos</button></td>
+          <td><button type="button" class="btn-op" id="btn-tan">tan</button></td>  
+          <td><button type="button" class="btn-op" id="btn-log">log</button></td>  
+        </tr>
+      </table>
+      <div class="history">
+        <h2>History</h2>
+        <textarea id="history" rows="10" readonly></textarea>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
